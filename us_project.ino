@@ -41,7 +41,7 @@ void loop() {
   }
 
   for (int i = 0; i < 5; i++) {
-    if (usX[i] < yMin){
+    if (usY[i] < yMin){
       yMin = usY[i];
     } 
   }
