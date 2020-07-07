@@ -55,7 +55,7 @@ int min_distance(int trig, int echo) {
 
   distance = duration * 0.034 / 2;
 
-  distance = max(distance, 40);
+  //distance = max(distance, 40);
 
   return distance;
 }
