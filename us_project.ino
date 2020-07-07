@@ -19,23 +19,23 @@ void setup() {
 
 void loop() {
   Serial.println();
-  Serial.print(" us1 : ");
+  Serial.print(" us01 : ");
   Serial.print(min_distance(2, 3));
-  Serial.print(" us2 : ");
+  Serial.print(" us02 : ");
   Serial.print(min_distance(4, 5));
-  Serial.print(" us3 : ");
+  Serial.print(" us03 : ");
   Serial.print(min_distance(6, 7));
-  Serial.print(" us4 : ");
+  Serial.print(" us04 : ");
   Serial.print(min_distance(8, 9));
-  Serial.print(" us5 : ");
+  Serial.print(" us05 : ");
   Serial.print(min_distance(10, 11));
-  Serial.print(" us6 : ");
+  Serial.print(" us06 : ");
   Serial.print(min_distance(12, 13));
-  Serial.print(" us7 : ");
+  Serial.print(" us07 : ");
   Serial.print(min_distance(14, 15));
-  Serial.print(" us8 : ");
+  Serial.print(" us08 : ");
   Serial.print(min_distance(16, 17));
-  Serial.print(" us9 : ");
+  Serial.print(" us09 : ");
   Serial.print(min_distance(18, 19));
   Serial.print(" us10 : ");
   Serial.print(min_distance(20, 21));
@@ -55,6 +55,8 @@ int min_distance(int trig, int echo) {
   duration = pulseIn(echo, HIGH);
 
   distance = duration * 0.034 / 2;
+
+  distance = constrain(distance, 0, 40);
 
   return distance;
 }
