@@ -34,11 +34,16 @@ void loop() {
   int xMin = usX[0];
   int yMin = usY[0];
 
+  Serial.println();
+
   for (int i = 0; i < 5; i++) {
     if (usX[i] < xMin){
       xMin = usX[i];
     } 
   }
+
+  Serial.print(" X : ");
+  Serial.print(xMin);
 
   for (int i = 0; i < 5; i++) {
     if (usY[i] < yMin){
@@ -46,36 +51,8 @@ void loop() {
     } 
   }
 
-  Serial.println();
-  Serial.print(" X : ");
-  Serial.print(xMin);
   Serial.print(" Y : ");
   Serial.print(yMin);
-
-  
-  /*
-  Serial.println();
-  Serial.print(" us01 : ");
-  Serial.print(min_distance(2, 3));
-  Serial.print(" us02 : ");
-  Serial.print(min_distance(4, 5));
-  Serial.print(" us03 : ");
-  Serial.print(min_distance(7, 6));
-  Serial.print(" us04 : ");
-  Serial.print(min_distance(9, 8));
-  Serial.print(" us05 : ");
-  Serial.print(min_distance(11, 10));
-  Serial.print(" us06 : ");
-  Serial.print(min_distance(34, 36));
-  Serial.print(" us07 : ");
-  Serial.print(min_distance(32, 30));
-  Serial.print(" us08 : ");
-  Serial.print(min_distance(26, 28));
-  Serial.print(" us09 : ");
-  Serial.print(min_distance(35, 37));
-  Serial.print(" us10 : ");
-  Serial.print(min_distance(22, 24));
-  */
 }
 
 
