@@ -3,35 +3,16 @@ int distance;
 
 void setup() {
 
-  pinMode(2, OUTPUT);
-  pinMode(3, INPUT);
+  int trigPins[10] = {2, 4, 6, 8, 10, 12, 14, 16, 18, 20};
+  int echoPins[10] = {3, 5, 7, 9, 11, 13, 15, 17, 19, 21};
 
-  pinMode(4, OUTPUT);
-  pinMode(5, INPUT);
+  for (int i = 0; i < 10; i++) {
+    pinMode(trigPins[i], OUTPUT);
+  }
 
-  pinMode(6, OUTPUT);
-  pinMode(7, INPUT);
-
-  pinMode(8, OUTPUT);
-  pinMode(9, INPUT);
-
-  pinMode(10, OUTPUT);
-  pinMode(11, INPUT);
-
-  pinMode(12, OUTPUT);
-  pinMode(13, INPUT);
-
-  pinMode(14, OUTPUT);
-  pinMode(15, INPUT);
-
-  pinMode(16, OUTPUT);
-  pinMode(17, INPUT);
-
-  pinMode(18, OUTPUT);
-  pinMode(19, INPUT);
-
-  pinMode(20, OUTPUT);
-  pinMode(21, INPUT);
+  for (int i = 0; i < 10; i++) {
+    pinMode(echoPins[i], INPUT);
+  }
 
   Serial.begin(9600);
 }
