@@ -16,6 +16,44 @@ void setup() {
 }
 
 void loop() {
+
+  int us01 = min_distance(2, 3);
+  int us02 = min_distance(4, 5);
+  int us03 = min_distance(7, 6);
+  int us04 = min_distance(9, 8);
+  int us05 = min_distance(11, 10);
+  int us06 = min_distance(34, 36);
+  int us07 = min_distance(32, 30);
+  int us08 = min_distance(26, 28);
+  int us09 = min_distance(35, 37);
+  int us10 = min_distance(22, 24);
+
+  int usX[6] = {us01, us02, us03, us04, us05};
+  int usY[6] = {us06, us07, us08, us09, us10};
+
+  int xMin = usX[0];
+  int yMin = usY[0];
+
+  for (int i = 0; i < 5; i++) {
+    if (usX[i] < xMin){
+      xMin = usX[i];
+    } 
+  }
+
+  for (int i = 0; i < 5; i++) {
+    if (usX[i] < yMin){
+      yMin = usY[i];
+    } 
+  }
+
+  Serial.println();
+  Serial.print(" X : ");
+  Serial.print(xMin);
+  Serial.print(" Y : ");
+  Serial.print(yMin);
+
+  
+  /*
   Serial.println();
   Serial.print(" us01 : ");
   Serial.print(min_distance(2, 3));
@@ -37,6 +75,7 @@ void loop() {
   Serial.print(min_distance(35, 37));
   Serial.print(" us10 : ");
   Serial.print(min_distance(22, 24));
+  */
 }
 
 
