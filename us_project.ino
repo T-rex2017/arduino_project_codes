@@ -39,25 +39,25 @@ void setup() {
 void loop() {
   Serial.println();
   Serial.print(" us1 : ");
-  Serial.println(min_distance(2, 3));
+  Serial.print(min_distance(2, 3));
   Serial.print(" us2 : ");
-  Serial.println(min_distance(4, 5));
+  Serial.print(min_distance(4, 5));
   Serial.print(" us3 : ");
-  Serial.println(min_distance(6, 7));
+  Serial.print(min_distance(6, 7));
   Serial.print(" us4 : ");
-  Serial.println(min_distance(8, 9));
+  Serial.print(min_distance(8, 9));
   Serial.print(" us5 : ");
-  Serial.println(min_distance(10, 11));
+  Serial.print(min_distance(10, 11));
   Serial.print(" us1 : ");
-  Serial.println(min_distance(12, 13));
+  Serial.print(min_distance(12, 13));
   Serial.print(" us1 : ");
-  Serial.println(min_distance(14, 15));
+  Serial.print(min_distance(14, 15));
   Serial.print(" us1 : ");
-  Serial.println(min_distance(16, 17));
+  Serial.print(min_distance(16, 17));
   Serial.print(" us1 : ");
-  Serial.println(min_distance(18, 19));
+  Serial.print(min_distance(18, 19));
   Serial.print(" us1 : ");
-  Serial.println(min_distance(20, 21));
+  Serial.print(min_distance(20, 21));
 }
 
 
