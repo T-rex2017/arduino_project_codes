@@ -3,8 +3,8 @@ int distance;
 
 void setup() {
 
-  int trigPins[10] = {2, 4, 6, 8, 10, 12, 14, 16, 18, 20};
-  int echoPins[10] = {3, 5, 7, 9, 11, 13, 15, 17, 19, 21};
+  int trigPins[10] = {2, 4, 7, 9, 11, 34, 32, 26, 35, 22};
+  int echoPins[10] = {3, 5, 6, 8, 10, 36, 30, 28, 37, 24};
 
   for (int i = 0; i < 10; i++) {
     pinMode(trigPins[i], OUTPUT);
@@ -24,21 +24,21 @@ void loop() {
   Serial.print(" us02 : ");
   Serial.print(min_distance(4, 5));
   Serial.print(" us03 : ");
-  Serial.print(min_distance(6, 7));
+  Serial.print(min_distance(7, 6));
   Serial.print(" us04 : ");
-  Serial.print(min_distance(8, 9));
+  Serial.print(min_distance(9, 8));
   Serial.print(" us05 : ");
-  Serial.print(min_distance(10, 11));
+  Serial.print(min_distance(11, 10));
   Serial.print(" us06 : ");
-  Serial.print(min_distance(12, 13));
+  Serial.print(min_distance(34, 36));
   Serial.print(" us07 : ");
-  Serial.print(min_distance(14, 15));
+  Serial.print(min_distance(32, 30));
   Serial.print(" us08 : ");
-  Serial.print(min_distance(16, 17));
+  Serial.print(min_distance(26, 28));
   Serial.print(" us09 : ");
-  Serial.print(min_distance(18, 19));
+  Serial.print(min_distance(35, 37));
   Serial.print(" us10 : ");
-  Serial.print(min_distance(20, 21));
+  Serial.print(min_distance(22, 24));
 }
 
 
