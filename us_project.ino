@@ -56,7 +56,7 @@ int min_distance(int trig, int echo) {
 
   distance = duration * 0.034 / 2;
 
-  distance = constrain(distance, 0, 40);
+  //distance = constrain(distance, 0, 40);
 
   return distance;
 }
