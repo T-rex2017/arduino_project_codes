@@ -1,5 +1,3 @@
-// defines variables
-int distance;
 
 void setup() {
 
@@ -45,6 +43,7 @@ void loop() {
 int min_distance(int trig, int echo) {
 
   long duration;
+  int distance;
 
   digitalWrite(trig, LOW);
   delayMicroseconds(2);
