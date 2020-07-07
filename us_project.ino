@@ -48,15 +48,15 @@ void loop() {
   Serial.print(min_distance(8, 9));
   Serial.print(" us5 : ");
   Serial.print(min_distance(10, 11));
-  Serial.print(" us1 : ");
+  Serial.print(" us6 : ");
   Serial.print(min_distance(12, 13));
-  Serial.print(" us1 : ");
+  Serial.print(" us7 : ");
   Serial.print(min_distance(14, 15));
-  Serial.print(" us1 : ");
+  Serial.print(" us8 : ");
   Serial.print(min_distance(16, 17));
-  Serial.print(" us1 : ");
+  Serial.print(" us9 : ");
   Serial.print(min_distance(18, 19));
-  Serial.print(" us1 : ");
+  Serial.print(" us10 : ");
   Serial.print(min_distance(20, 21));
 }
 
