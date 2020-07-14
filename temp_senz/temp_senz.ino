@@ -5,6 +5,7 @@ int temp_btn = 4;
 int green_led = 5;
 int red_led = 6;
 
+// variables for millis 
 unsigned long currentmillis = 0;
 unsigned long previousmillis = 0;
 unsigned long wakemillis = 0;
