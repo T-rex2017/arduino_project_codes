@@ -1,4 +1,4 @@
-
+// input & output pins
 int uv_trig = 2;
 int uv_echo = 3;
 int temp_btn = 4;
