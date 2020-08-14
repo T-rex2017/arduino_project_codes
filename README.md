@@ -13,3 +13,6 @@ arduino code for some arduino projects which are yet not moved to arduino_projec
 
 4.  Ultraviolet Fruit Cleaning Box
         with use of uv lights clean fruits from bacteria and viorus
+  
+5. INR to USD
+        INR to USC with i2c lcd and push button T9 keypad
